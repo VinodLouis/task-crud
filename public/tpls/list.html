@@ -1,0 +1,35 @@
+<div>
+<div ng-if="vm.tasks.length > 0">
+    <h2 class="text-center"> Task List ( <a href="#/tasks/"> Add New </a>)</h2>
+    <table class="table table-bordered table-hover" >
+    <thead>
+    <tr><th>No.</th><th>Title</th><th>Description</th><th>Time</th><th>Edit</th><th>Delete</th></tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="eachTask in vm.tasks">
+        <td>
+            {{$index+1}}
+        </td>
+        <td>
+            {{eachTask.title}}
+        </td>
+        <td>
+            {{eachTask.desc}}
+        </td>
+        <td>
+            {{eachTask.taskdt}}
+        </td>
+        <td>
+        <a style="color:#000000" ng-href="#/tasks/{{eachTask._id}}">&#9998;</a>
+        </td>
+        <td>
+            <span style="cursor:pointer;" ng-click="vm.deleteTask(eachTask._id)">X</span>
+        </td>
+    </tr>
+    </tbody>
+</table>
+</div>
+
+
+<div ng-if="vm.tasks.length == 0" class="text-center">No Data Available Click <a href="#/tasks/"> here </a> to insert task</div>
+</div>

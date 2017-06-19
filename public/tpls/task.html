@@ -1,0 +1,27 @@
+<h2 class="text-center"> Task Details</h2>
+<form class="form-horizontal" name="taskForm">
+    <div class="form-group">
+        <label class="control-label col-sm-2" for="tlt">*Title:</label>
+        <div class="col-sm-8">
+            <input type="text" ng-model="vm.task.title" class="form-control" id="tlt" placeholder="Enter Task Title" required>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-sm-2" for="desct">Description:</label>
+        <div class="col-sm-8">
+            <textarea rows="5" ng-model="vm.task.desc" class="form-control" id="desct" placeholder="Enter Descption"></textarea>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-sm-2" for="taskdt">*Task DateTime:</label>
+        <div class="col-sm-8">
+            <input datetime-picker date-format="yyyy-MM-dd HH:mm:ss" future-only ng-model="vm.task.taskdt" class="form-control" id="taskdt" placeholder="select datetime" required/>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-8">
+            <button ng-click="vm.createTask(false)" ng-disabled="!taskForm.$valid" type="submit" class="btn btn-success">Save</button>
+            <button ng-click="vm.createTask(true)" ng-disabled="!taskForm.$valid" type="submit" class="btn btn-primary">Save and Add New</button>
+        </div>
+    </div>
+</form>
