@@ -13,7 +13,7 @@ To Run Application
  2. Got to root and do `npm install` 
  3. After success do `node index.js`
 
-The application will run on port `8082` click http://localhost:8082 in order to access application. To see the App in action see the ![LIVE DEMO](https://fast-river-12225.herokuapp.com)
+The application will run on port `8082` click http://localhost:8082 in order to access application. To see the App in action see the [LIVE DEMO](https://fast-river-12225.herokuapp.com)
 
 >index js
 >
