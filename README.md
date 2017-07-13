@@ -15,6 +15,8 @@ To Run Application
 
 The application will run on port `8082` click http://localhost:8082 in order to access application. To see the App in action see the [LIVE DEMO](https://fast-river-12225.herokuapp.com)
 
+For a tutorial of the App visit [BLOG](https://vinodlouis.blogspot.in/2017/07/node-angular1xmongodb-express-task-list.html). 
+
 >index js
 >
 >This is the entry point of application which has ststic directories defined in path established the mongo DB connection and listens to port
